@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Tilt+Neon&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+h4{
+    
+    font-size: 25px;
+    color: blanchedalmond;
+    font-family: 'Tilt Neon', sans-serif;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: transparent;
+    text-shadow: #000 1px 1px 1px;
+    margin-bottom: 15px;
+    line-height: 10px;
+    
+
+}
+
+h3{
+    color: #753C19;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    font-size: 12px;
+    padding-bottom: 35px;
+    text-align: center;
+    line-height: 16px;
+    
+}
+
+h6{
+    color: blanchedalmond;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+}
+
+h5{
+    color: black;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+li:hover {
+  color: #753C19;  
+}
+
+#logo{
+    width: 100px ;
+    height: auto;
+        
+}
+
+body{
+    width: 100%;
+    font-weight: 100;
+    font-size: 10px;
+    line-height: 30px;
+    color: #753C19;
+    background-color: black;
+    font-family: 'Tilt Neon', sans-serif;
+   
+    
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: #fa8740;
+    margin-bottom: 20px;
+    
+  } 
+
+.contato{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.form-contato{
+        
+        background-color: #b58458;
+        padding: 25px;
+        margin: 60px 0;
+        border-radius: 5px;
+        border: 2px dotted white;
+}
+
+label{
+    font-size: 17px;
+    background-color: transparent;
+    margin: 5px 1px;
+}
+
+input{
+    width: 95%;
+    padding: 10px;
+    margin: 0 0 5px;
+    border: 2px solid #fff;
+    background-color: rgb(203, 216, 212);
+}
+
+textarea{
+    width: 95%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    background-color: rgb(203, 216, 212);
+    color: #fff;
+}
+
+button{
+    width: 50%;
+    padding: 10px;
+    margin-left: 90px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    background-color:#753C19;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+footer{
+    height: 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: 'Tilt Neon', sans-serif;
+    align-items: center;
+}
+
+.footer-navegation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+nav {
+  display: none;
+}
+.footer-navegation{
+    display: block;
+}
+li{
+font-size: 12px;
+line-height: 25px;
+}
+li:hover{
+    color: #fa8740;
+}
+}
+
+
+@media (max-width: 768px){
+    #vaisumir {
+      font-size: 50px;
+      color: #753C19;
+      padding-top: 10px;
+    }
+
+    }

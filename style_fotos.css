@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+li:hover {
+  color: #fa8740; 
+}
+
+#logo{
+    width: 100px ;
+    height: auto;
+        
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: #fa8740;
+    margin-bottom: 20px;
+    
+  } 
+
+.actor-cards-container {
+    width: 100%;
+    margin-left: 5px;
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+}
+
+.cards-content{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: 10% 10%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 20px;
+    color: black;
+    font-size: 17px;
+    font-family: 'Tilt Neon', sans-serif;
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+
+.banner-1{
+    background-image:url('https://img.ibxk.com.br/2022/03/21/21150156928422.jpg');
+
+}
+.banner-2{
+    background-image:url('https://www.contato.net/contato.net/uploads/noticia_701/1564059334_up-netflix.png');
+}
+
+.banner-3{
+    background-image:url('https://ateladoaventurar.files.wordpress.com/2010/10/26d12-272014_papel-de-parede-up-altas-aventuras-272014_1920x1200.jpg?w=768');
+    
+}
+.banner-4{
+    background-image:url('https://multiversonoticias.com.br/wp-content/uploads/2022/06/painel-2x1-up-altas-aventuras-up-altas-aventuras.jpg');
+
+}
+.banner-5{
+    background-image:url('https://www.guiadasemana.com.br/contentFiles/system/pictures/2012/7/54708/original/up-05.jpg');
+}
+
+.banner-6{
+    background-image:url('https://varanda.blog.br/wp-content/uploads/2018/08/up-800x525.jpg');
+    
+}
+
+
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 1px;
+}
+
+span{
+    color: #fff;
+    font-family: 'Tilt Neon', sans-serif;
+    align-items: center;
+   
+   
+}
+
+.footer-navegation {
+    display: none;
+    
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    nav {
+      display: none;
+    }
+    .footer-navegation{
+        display: block;
+    }
+    li{
+    font-size: 12px;
+    line-height: 25px;
+    }
+    li:hover{
+        color: #fa8740;
+    }
+    }

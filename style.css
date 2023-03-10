@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+li:hover {
+  color: #fa8740; 
+}
+
+#logo{
+    width: 100px ;
+    height: auto;
+        
+}
+
+#banner {
+    background-image: url('https://www.louveira.sp.gov.br/sitenovo/painel/dbanexos/dbanexo_imagem/04-2020/37f87d78c7376569b8bf1b3c80a18e9a.jpg');
+    background-position: 50% 50%;
+    background-size: cover ;
+    width: 100%;
+    height: 500px;
+    
+    
+}
+
+#trailer-container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer{
+    width: 50%;
+}
+
+#sinopse{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+.description{
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Tilt Neon', sans-serif;
+    width: 150%;
+    text-align: justify;
+    }
+
+.button{
+    width: 650px;
+    height: 40px;
+    background-color: #fa8740;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    
+}
+
+.button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: black;
+    font-size: 17px;
+    font-family: 'Satisfy', sans-serif;
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1{
+    background-image:url('https://essaseoutras.com.br/wp-content/uploads/2015/05/filme-up-altas-aventuras-sinopse-elenco-atores-1.jpg');
+
+}
+.banner-2{
+    background-image:url('https://i0.wp.com/nerdizmo.uai.com.br/wp-content/uploads/sites/29/2021/12/carl-up-realismo-capa.jpg?fit=1280%2C720&ssl=1');
+}
+
+.banner-3{
+    background-image:url('https://recreio.uol.com.br/media/uploads/disney/carl_e_ellie.jpg');
+}
+
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 1px;
+}
+
+span{
+    color: #fff;
+    font-family: 'Tilt Neon', sans-serif;
+    align-items: center;
+   
+   
+}
+
+
+.footer-navegation {
+    display: none;
+    
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width:768px){
+    .footer-navegation{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    #banner {
+        background-position: 60%;
+    }
+    #trailer-container{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer{
+        width: 100%;
+    }
+
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+
+}
+
+@media (max-width: 768px){
+    nav {
+      display: none;
+    }
+    .footer-navegation{
+        display: block;
+    }
+    li{
+    font-size: 12px;
+    line-height: 25px;
+    }
+    li:hover{
+        color: #fa8740;
+    }
+    }
